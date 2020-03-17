@@ -25,4 +25,4 @@ summary(fit)
 # Plotting significant preditors
 plot(PP$Total ~ PP$Time)
 plot(PP$Total ~ PP$`Shift Type`)
-plot(PP$Total ~ PP$`Years of registration`)
+ggplot(data=PP, aes(x=`Years of registration`, y=Total)) + geom_smooth()
